@@ -53,6 +53,7 @@ int main(int argc, char * argv[]) {
             case 'h':
                 printf("Usage: %s [-m]\n", argv[0]);
                 printf("\tArg -m STRING : name of multi-layer perceptron mode file\n");
+                printf("\tArg -h : display this help message\n");
                 return 1;
         }
     }

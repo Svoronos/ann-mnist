@@ -125,6 +125,8 @@ int main(int argc, char * argv[]) {
                 printf("\tArg -f INTEGER: activation function to use, 0 for Sigmoid, 1 for ReLU, 2 for Leaky ReLU\n");
                 printf("\tArg -r comma-separate string: range of random values to initialize neural network weights and biases with\n"
                         "\t\te.g. '-2,2' to initialize weights and biases between -2 and 2\n");
+                
+                printf("\tArg -h : display this help message\n");
                 printf("\nExample : begin training with a neural network with architecture 784 > 128 > 128 > 10 a learning rate of 0.02 and randomized initial weights in the range [-0.2,0.2]\n"
                         "%s -a 128,128 -l 0.02 -r -0.2,0.2\n", argv[0]);
 

@@ -32,6 +32,14 @@ g++ -o mnist_test ./mnist_test.cpp -O2
 ./mnist_test
 ```
 
+Run the executables with the -h command to see usage information
+
+``` bash
+./mnist_train -h
+./mnist_test -h
+```
+
+
 
 ## Introduction
 
