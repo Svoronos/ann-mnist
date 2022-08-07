@@ -91,6 +91,15 @@ The table below shows results for various architectures with all other configura
 - Activation Function : Sigmoid
 - Range of initial weights random values : [-0.05,0.05]
 
+The columns outline the following characteristics for each experimental configuration
+
+- **Architecture** : the neural network's architecture.
+- **Best test  Data accuracy (%)** : the highest accuracy achieved with the current architecture. E.g. a value of 98.30% would mean that out of the 10000 test images, 9830 were accurately inferred as the right digit.
+- **Time per epoch  (in seconds)** : the time needed for a full pass through all 60000 images of the training data during the training process. Includes time needed for inferring the neural network through the 10000 test images to compute a test data accuracy %.
+- **Inference Time  (in microseconds)** : time needed to infer the class of a 28 * 28 image through the neural network. Does not include any kind of image preprocessing (e.g. rescaling or foreground/background segmentation). Does not include converting the image from a pixel, 8-bit unsigned integer format to a double representation in the range [0,1]. Only the predict() function runtime of the NeuralNetwork class in mlp_lib.hpp is measured.
+- **Model File Size  (in Kbytes)** : the size of the exported model file in Kbytes.
+- **Trainable Parameters** : the total number of weights and biases in the exported neural network.
+
 ![](images/benchmarks1.png)
 
 
